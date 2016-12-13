@@ -19,7 +19,7 @@ namespace Blog.Models
             return userIdentity;
         }
     }
-
+    
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -31,5 +31,7 @@ namespace Blog.Models
         {
             return new ApplicationDbContext();
         }
+
+        public virtual IDbSet<Places> PlacesContext { get; set; }
     }
 }
