@@ -15,7 +15,7 @@ namespace Blog
         {
 
             Database.SetInitializer(
-                new MigrateDatabaseToLatestVersion<ApplicationDbContext, Configuration>());
+                new MigrateDatabaseToLatestVersion<BlogDbContext, Configuration>());
 
             ConfigureAuth(app);
         }
